@@ -50,7 +50,7 @@ function loadLiquidFillGauge(elementId, value, config) {
             .domain([0,100]);
     }
 
-    var textPixels = (config.textSize*radius/2);
+    const textPixels = (config.textSize*radius/2);
     var textFinalValue = parseFloat(value).toFixed(2);
     var textStartValue = config.valueCountUp?config.minValue:textFinalValue;
     var percentText = config.displayPercent?"l":"";
