@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
+    <style>
+        .liquidFillGaugeText { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold; }
+        .svg {margin-top: 50px; margin-left: 25px;}
+        .gauges {display: flex; justify-content: center;}
+    </style>
+</head>
+<body>
+
+<div class="gauges">
+<div class="circle"> <svg id="fillgauge1" width="97%" height="250"; tabindex="0";> <title>133 Liter Minden</title> </svg></div>
+</div>
+
+<script language="JavaScript">
+    var gauge1 = loadLiquidFillGauge("fillgauge1", 133);
+
+</script>
+</body>
+</html>
