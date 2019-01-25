@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Entfernungen Minden und Zaatari</title>
+
+
+<style>
+
+body {
+  font-family: sans-serif;
+}
+
+
+a {
+	font-size:20px;
+	margin-right:30px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.line {
+  fill:none;
+}
+
+.x.axis path {
+  display: inline;
+}
+
+.y.axis path {
+  display: none;
+}
+
+
+
+.axis.y .tick line 		{
+stroke-width:1px;
+stroke:#ccc;
+stroke-opacity:1;
+}
+
+
+
+<!DOCTYPE html>
+<html><head><title>SVG Beispiel</title></head>
+<body>
+<script src='http://d3js.org/d3.v3.min.js'></script>
+
+<svg id="v1" viewBox="0 0 450 120" style="width:600px; max-width:100%;">
+  <rect x="0" y="0" height="120" width="160" fill="#ff6600"/>
+  <ellipse cx="240" cy="60" rx="120" ry="40" fill="green"/>
+  <line x1="20" y1="20" x2="450" y2="100" stroke="blue"/>
+</svg>
+
+<script>
+  d3.select('svg#v1').append('circle')
+    .attr('cx','380')
+    .attr('cy','60')
+    .attr('r','55')
+    .style('stroke','red')
+    .style('fill','lightsteelblue')
+    .style('fill-opacity',0.5);
+</script>
+
+</script></body></html>
